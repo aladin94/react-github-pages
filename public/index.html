@@ -1,43 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+  <title>Rockstar Top Games</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+  <!-- Fonts -->
+  <link href="//db.onlinewebfonts.com/c/146c398456e6a22b45102120ae8a7679?family=Narcissus" rel="stylesheet"
+    type="text/css" />
+  <link href="//db.onlinewebfonts.com/c/a831b9f809b26c4eccf896ff84964ade?family=Machine" rel="stylesheet"
+    type="text/css" />
+  <link href="//db.onlinewebfonts.com/c/2105de117ec27780e99c2d425d0d5844?family=Chinese+Rocks" rel="stylesheet"
+    type="text/css" />
+  <link href="//db.onlinewebfonts.com/c/4cca73663be210d1abb8d4c8879cd5ce?family=Pricedown" rel="stylesheet"
+    type="text/css" />
+  <link href="//db.onlinewebfonts.com/c/21400dc679986534519c638136d62dbf?family=Rage+Italic" rel="stylesheet"
+    type="text/css" />
+
+  <!-- Swiper API -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+</head>
+
+<body>
+  <div class="swiper-container main-slider loading">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <figure class="slide-bgimg" style="background-image:url(images/frontpage.jpg)">
+          <img src="images/frontpage.jpg" class="entity-img" />
+        </figure>
+        <div class="content" id="homepage-content">
+          <p class="title">Top 5 Rockstar Games</p>
+          <p class="caption">As rated by Metacritic.com</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <figure class="slide-bgimg" style="background-image:url(images/gta5.jpg)">
+          <img src="images/gta5.jpg" class="entity-img" />
+        </figure>
+        <div class="content1">
+          <p class="title1">grand theft auto V</p>
+          <p class="caption1">MetaScore: 97</p>
+          <p class="caption1">User Score: 83</p>
+          <p class="caption1">Release Year: 2014</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <figure class="slide-bgimg" style="background-image:url(images/reddead2.jpg)">
+          <img src="images/reddead2.jpg" class="entity-img" />
+        </figure>
+        <div class="content2" id="red-content">
+          <p class="title2">Red Dead Redemption 2</p>
+          <p class="caption2">MetaScore: 97</p>
+          <p class="caption2">User Score: 82</p>
+          <p class="caption2">Release Year: 2018</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <figure class="slide-bgimg" style="background-image:url(images/Max.jpg)">
+          <img src="images/max.jpg" class="entity-img" />
+        </figure>
+        <div class="content3" id="payne-content">
+          <p class="title3">MAX PAYNE</p>
+          <p class="caption3">MetaScore: 89</p>
+          <p class="caption3">User Score: 91</p>
+          <p class="caption3">Release Year: 2001</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <figure class="slide-bgimg" style="background-image:url(images/vv.png)">
+          <img src="images/vv.png" class="entity-img" />
+        </figure>
+        <div class="content4" id="vice-city-content">
+          <p class="title4">Vice City</p>
+          <p class="caption4">MetaScore: 95</p>
+          <p class="caption4">User Score: 88</p>
+          <p class="caption4">Release Year: 2002</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <figure class="slide-bgimg" style="background-image:url(images/bully.jpg)">
+          <img src="images/bully.jpg" class="entity-img" />
+        </figure>
+        <div class="content5" id="bully-content">
+          <p class="title5">BULLY</p>
+          <p class="caption5">MetaScore: 87</p>
+          <p class="caption5">User Score: 90</p>
+          <p class="caption5">Release: 2006</p>
+        </div>
+      </div>
+    </div>
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev swiper-button-white"></div>
+    <div class="swiper-button-next swiper-button-white"></div>
+  </div>
+
+  <!-- Thumbnail navigation -->
+  <div class="swiper-container nav-slider loading">
+    <div class="swiper-wrapper" id="navbar" role="navigation">
+      <div class="swiper-slide">
+        <figure class="slide-bgimg" style="background-image:url(images/frontpage.jpg)">
+          <img src="images/frontpage.jpg" class="entity-img" />
+        </figure>
+        <div class="content" id="navslider1">
+          <p class="title">Rockstar Games</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <figure class="slide-bgimg" style="background-image:url(images/gta5.jpg)">
+          <img src="images/gta5.jpg" class="entity-img" />
+        </figure>
+        <div class="content" id="navslider2">
+          <p class="title" id="slider-title1">grand theft auto V</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <figure class="slide-bgimg" style="background-image:url(images/reddead2.jpg)">
+          <img src="images/reddead2.jpg" class="entity-img" />
+        </figure>
+        <div class="content" id="navslider3">
+          <p class="title">Red Dead 2</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <figure class="slide-bgimg" style="background-image:url(images/max.jpg)">
+          <img src="images/max.jpg" class="entity-img" />
+        </figure>
+        <div class="content" id="navslider4">
+          <p class="title">Max Payne</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <figure class="slide-bgimg" style="background-image:url(images/vv.png)">
+          <img src="images/vv.png" class="entity-img" />
+        </figure>
+        <div class="content" id="navslider5">
+          <p class="title">Vice City</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <figure class="slide-bgimg" style="background-image:url(images/bully.jpg)">
+          <img src="images/bully.jpg" class="entity-img" />
+        </figure>
+        <div class="content" id="navslider6">
+          <p class="title" id="slider-title-bully">Bully</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="index.js" async defer></script>
+</body>
+
 </html>

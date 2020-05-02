@@ -1,0 +1,456 @@
+/* Imports for Each Game's respective font */
+@import url(//db.onlinewebfonts.com/c/21400dc679986534519c638136d62dbf?family=Rage+Italic);
+@import url(//db.onlinewebfonts.com/c/4cca73663be210d1abb8d4c8879cd5ce?family=Pricedown);
+@import url(//db.onlinewebfonts.com/c/2105de117ec27780e99c2d425d0d5844?family=Chinese+Rocks);
+@import url(//db.onlinewebfonts.com/c/a831b9f809b26c4eccf896ff84964ade?family=Machine);
+@import url(//db.onlinewebfonts.com/c/146c398456e6a22b45102120ae8a7679?family=Narcissus);
+
+[class^="swiper-button-"] {
+    transition: all 0.3s ease;
+}
+
+.swiper-slide {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper-container {
+    width: 80%;
+    height: 100vh;
+    float: left;
+    transition: opacity 0.6s ease, transform 0.3s ease;
+}
+
+.swiper-container.nav-slider {
+    width: 20%;
+    padding-left: 5px;
+}
+
+.swiper-container.nav-slider .swiper-slide {
+    cursor: pointer;
+    opacity: 0.4;
+    transition: opacity 0.3s ease;
+}
+
+.swiper-container.nav-slider .swiper-slide.swiper-slide-active {
+    opacity: 1;
+}
+
+.swiper-container.nav-slider .swiper-slide .content {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+.swiper-container.nav-slider .swiper-slide .content .title {
+    font-size: 1.3em;
+}
+
+.swiper-container:hover .swiper-button-prev, .swiper-container:hover .swiper-button-next {
+    opacity: 1;
+    visibility: visible;
+}
+
+.swiper-container.loading {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#homepage-content {
+    border: 10px solid orange;
+}
+
+.swiper-slide {
+    overflow: hidden;
+}
+
+.swiper-slide .slide-bgimg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.swiper-slide .entity-img {
+    display: none;
+}
+
+[class^="swiper-button-"] {
+    width: 44px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.swiper-button-prev {
+    transform: translateX(50px);
+}
+
+.swiper-button-next {
+    transform: translateX(-50px);   
+}
+
+/* Individual content colorways for each game */
+
+.swiper-slide .content {
+    position: absolute;
+    font-family: "Helvetica";
+    top: 69%;
+    left: 15%;
+    border-radius: 8px;
+    width: auto;
+    padding-right: 3em;
+    padding-left: 3em;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgb(255,171,0);
+}
+
+.swiper-slide .content .title {
+    font-size: 3.9em;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    font-weight: bold; 
+    margin-bottom: 1px;
+}
+
+
+.swiper-slide .content .caption {
+    font-size: 2em;
+    line-height: 1.4;
+    font-weight: bold;
+    transform: translateX(19%);
+    opacity: 1;
+    transition: opacity 0.3s ease, transform 0.7s ease;
+}
+
+.swiper-slide .content .caption.show {
+    opacity: 1;
+}
+
+/* GTA 5 */
+.content1,
+#navslider2 {
+    font-family: "Pricedown";
+}
+
+.swiper-slide .content1 {
+    position: absolute;
+    top: 67.5%;
+    left: 0;
+    width: auto;
+    border-radius: 3%;
+    padding-right: 3em;
+    padding-left: 3em;
+    background-color: rgba(58,102,19, 0.90);
+}
+
+.swiper-slide .content1 .title1 {
+    font-size: 4.3em;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-bottom: 9px;
+    color: rgb(253, 253, 253);
+}
+
+.swiper-slide .content1 .caption1 {
+    display: block;
+    font-size: 3em;
+    line-height: 1;
+    opacity: 1;
+    color: rgb(253, 253, 253);
+    transition: opacity 0.3s ease, transform 0.7s ease;
+}
+
+/* Red Dead 2 */
+.swiper-slide .content2,
+#navslider3 {
+    font-family: "Chinese Rocks";
+}
+
+.swiper-slide .content2 {
+    position: absolute;
+    top: 69%;
+    left: 0;
+    width: auto;
+    padding-right: 2em;
+    padding-left: 2em;
+    border-radius: 2%;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.swiper-slide .content2 .title2 {
+    font-size: 3.9em;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 1px;
+    color: rgb(254,0,0);
+}
+
+.swiper-slide .content2 .caption2 {
+    display: block;
+    font-size: 2em;
+    line-height: 1.4;
+    opacity: 1;
+    color: rgb(254,0,0);
+    transition: opacity 0.3s ease, transform 0.7s ease;
+}
+
+/* Max Payne */
+.swiper-slide .content3,
+#navslider4 {
+    font-family: "Machine";
+}
+
+.swiper-slide .content3 {
+    position: absolute;
+    top: 29%;
+    left: 0;
+    width: auto;
+    padding-right: 2em;
+    padding-left: 2em;
+    border-radius: 2%;
+    background-color: rgba(0,0,0, 0.9);
+}
+
+.swiper-slide .content3 .title3 {
+    font-size: 3.9em;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-bottom: 1px;
+    color: rgb(184,0,1);
+}
+
+.swiper-slide .content3 .caption3 {
+    display: block;
+    font-size: 2em;
+    line-height: 1.4;
+    opacity: 1;
+    color: rgb(255,255,255);
+    transition: opacity 0.3s ease, transform 0.7s ease;
+}
+
+/* GTA Vice City */
+.swiper-slide .content4,
+#navslider5 {
+    font-family: "Rage Italic";
+}
+
+.swiper-slide .content4 {
+    position: absolute;
+    top: 70%;
+    left: 68%;
+    width: auto;
+    font-style: bold;
+    padding-right: 2em;
+    padding-left: 1.7em;
+    border-radius: 2%;
+    background-color: rgba(235,138,184, 0.65);
+}
+
+.swiper-slide .content4 .title4 {
+    position: relative;
+    font-size: 3.4em;
+    display: flex;
+    font-weight: bold;
+    margin-bottom: 1px;
+    color: rgb(253,253,253);
+}
+
+.swiper-slide .content4 .caption4 {
+    position: relative;
+    display: block;
+    font-size: 2.5em;
+    line-height: 1;
+    font-style: bold;
+    opacity: 1;
+    color: rgb(253,253,253);
+    transition: opacity 0.3s ease, transform 0.7s ease;
+}
+
+/* Bully */
+.swiper-slide .content5,
+#navslider6 {
+    font-family: "Narcissus";
+}
+
+.swiper-slide .content5 {
+    position: absolute;
+    top: 65%;
+    left: 65%;
+    width: auto;
+    padding-right: 2em;
+    padding-left: 2em;
+    border-radius: 2%;
+    background-color: rgba(19,47,84, 0.78);
+}
+
+.swiper-slide .content5 .title5 {
+    font-size: 3.9em;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1px;
+    color: rgb(253,176,20);
+}
+
+.swiper-slide .content5 .caption5 {
+    display: block;
+    font-size: 2em;
+    line-height: 1.4;
+    opacity: 1;
+    color: rgb(253,176,20);
+    transition: opacity 0.3s ease, transform 0.7s ease;
+}
+
+/* Nav Sliders */
+#navslider1,
+#navslider2,
+#navslider3,
+#navslider4,
+#navslider5,
+#navslider6 {
+    width: 100%;
+    left: 0%;
+}
+
+#navslider1{
+    color: orange;
+    font-size: 1em;
+}
+
+/* GTA5 */
+#navslider2 {
+    padding-right: 0em;
+    padding-left: 0em;
+    margin-top: -2em;
+    font-size: 1.5em;
+    background-color: rgba(0, 0, 0, 0.75);
+    letter-spacing: 2px;
+    color: rgb(253, 253, 253);
+}
+
+#slider-title1,
+#slider-title-bully{
+    font-weight: normal; 
+}
+
+/* Red dead 2 */
+#navslider3 {
+    padding-right: 0em;
+    padding-left: 0em;
+    margin-top: -1em;
+    color: red;
+    font-size: 1.3em;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+/* Max Payne Slider */
+#navslider4 {
+    padding-bottom: 10px;
+    color: rgb(184,0,1);
+    font-size: 1.3em;
+    background-color: rgba(0,0,0, 0.99);
+}
+
+/* Vice City Slider */
+#navslider5 {
+    align-content: center;
+    justify-content: center;
+    font-weight: normal;
+    margin-top: -0.1em;
+    color: white;
+    font-size: 1.5em;
+    background-color: rgba(235,138,184, 0.75);
+}
+
+/* Bully Slider */
+#navslider6 {
+    align-content: center;
+    justify-content: center;
+    font-style: none;
+    margin-top: 0.1em;
+    color: rgb(253,176,20);
+    font-size: 1.5em;
+    background-color: rgba(19,47,84, 0.78);
+}
+
+#slider-title-bully{
+    font-weight: normal;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 400px) and (max-width: 1000px) {
+    #navbar{
+        visibility: hidden;
+    }
+    .swiper-container {
+        width: 100vw;
+        position: relative;
+    }
+    .content {
+        font-size: 0.7em;
+    }
+    #homepage-content {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        justify-content: center;
+        padding: 19px;
+    }
+
+    .slide-bgimg {
+        width: 100vw;
+        height: 100vh;
+    }
+
+
+    #vice-city-content,
+    .content4 {
+        left: 28%;
+        border-radius: 10px;
+        top: 66%;
+        text-align: center;
+        position: absolute;
+        /* display: flex; */
+        /* margin-right: 29px; */
+    }
+
+    #bully-content,
+    .content5 {
+        left: 59%;
+        font-size: 0.9em;
+        border-radius: 10px;
+        top: 65%;
+        position: absolute;
+    }
+
+    #payne-content {
+        position: absolute;
+        top: 6%;
+        border-radius: 6px;
+        font-size: 0.9em;
+    }
+
+    #red-content {
+        display: flex;
+        flex-direction: column;
+        font-size: 0.9em;
+        margin-top: -3em;
+    }
+
+}
+
+#red-content {
+    font-family: "Chinese Rocks";
+}
